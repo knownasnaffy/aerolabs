@@ -1,5 +1,5 @@
 "use client";
-import { ChevronsDown, Github, Menu } from "lucide-react";
+import { PlaneTakeoff, Github, Menu } from "lucide-react";
 import React from "react";
 import {
   Sheet,
@@ -17,11 +17,13 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
+  navigationMenuTriggerStyle,
 } from "../ui/navigation-menu";
 import { Button } from "../ui/button";
 import Link from "next/link";
 import Image from "next/image";
 import { ModeToggle } from "./toggle-theme";
+import { cn } from "@/lib/utils";
 
 interface RouteProps {
   href: string;
@@ -74,8 +76,8 @@ export const Navbar = () => {
   return (
     <header className="shadow-inner bg-opacity-15 w-[90%] md:w-[70%] lg:w-[75%] lg:max-w-screen-xl top-5 mx-auto sticky border border-secondary z-40 rounded-2xl flex justify-between items-center p-2 bg-card">
       <Link href="/" className="font-bold text-lg flex items-center">
-        <ChevronsDown className="bg-gradient-to-tr border-secondary from-primary via-primary/70 to-primary rounded-lg w-9 h-9 mr-2 border text-white" />
-        Shadcn
+        <PlaneTakeoff className="bg-gradient-to-tr border-secondary from-primary via-primary/70 to-primary rounded-lg size-8 p-1 mr-2 border text-white" />
+        AeroLabs
       </Link>
       {/* <!-- Mobile --> */}
       <div className="flex items-center lg:hidden">
@@ -95,7 +97,7 @@ export const Navbar = () => {
               <SheetHeader className="mb-4 ml-4">
                 <SheetTitle className="flex items-center">
                   <Link href="/" className="flex items-center">
-                    <ChevronsDown className="bg-gradient-to-tr border-secondary from-primary via-primary/70 to-primary rounded-lg w-9 h-9 mr-2 border text-white" />
+                    <PlaneTakeoff className="bg-gradient-to-tr border-secondary from-primary via-primary/70 to-primary rounded-lg w-9 h-9 mr-2 border text-white" />
                     Shadcn
                   </Link>
                 </SheetTitle>
@@ -135,7 +137,7 @@ export const Navbar = () => {
             <NavigationMenuContent>
               <div className="grid w-[600px] grid-cols-2 gap-5 p-4">
                 <Image
-                  src="https://avatars.githubusercontent.com/u/75042455?v=4"
+                  src="https://placehold.co/128x128"
                   alt="RadixLogo"
                   className="h-full w-full rounded-md object-cover"
                   width={600}
@@ -160,30 +162,28 @@ export const Navbar = () => {
             </NavigationMenuContent>
           </NavigationMenuItem>
 
-          <NavigationMenuItem>
-            {routeList.map(({ href, label }) => (
-              <NavigationMenuLink key={href} asChild>
-                <Link href={href} className="text-base px-2">
+          {/* <NavigationMenuItem>
+                  </NavigationMenuItem> */}
+
+          {routeList.map(({ href, label }) => (
+            <NavigationMenuItem key={href}>
+              <Link href={href} legacyBehavior passHref>
+                <NavigationMenuLink
+                  className={cn(
+                    navigationMenuTriggerStyle(),
+                    "bg-transparent text-base"
+                  )}
+                >
                   {label}
-                </Link>
-              </NavigationMenuLink>
-            ))}
-          </NavigationMenuItem>
+                </NavigationMenuLink>
+              </Link>
+            </NavigationMenuItem>
+          ))}
         </NavigationMenuList>
       </NavigationMenu>
 
       <div className="hidden lg:flex">
         <ModeToggle />
-
-        <Button asChild size="icon" variant="ghost" aria-label="View on GitHub">
-          <Link
-            aria-label="View on GitHub"
-            href="https://github.com/nobruf/shadcn-landing-page.git"
-            target="_blank"
-          >
-            <Github className="size-5" />
-          </Link>
-        </Button>
       </div>
     </header>
   );

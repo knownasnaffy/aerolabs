@@ -6,8 +6,18 @@ const nextConfig = {
         protocol: "https",
         hostname: "avatars.githubusercontent.com",
         port: "",
+        pathname: "/u/**",
       },
     ],
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "placehold.co",
+        port: "",
+        pathname: "/**",
+      },
+    ],
+    dangerouslyAllowSVG: true,
   },
 };
 

@@ -9,22 +9,22 @@ import Link from "next/link";
 export const HeroSection = () => {
   const { theme } = useTheme();
   return (
-    <section className="container w-full mx-auto">
+    <section className="container w-full">
       <div className="grid place-items-center lg:max-w-screen-xl gap-8 mx-auto py-20 md:py-32">
         <div className="text-center space-y-8">
           <Badge variant="outline" className="text-sm py-2">
             <span className="mr-2 text-primary">
               <Badge>New</Badge>
             </span>
-            <span> Design is out now! </span>
+            <span> Advanced drone course out now! </span>
           </Badge>
 
-          <div className="max-w-screen-md mx-auto text-center text-4xl md:text-6xl font-bold px-2">
+          <div className="max-w-screen-md mx-auto text-center text-4xl md:text-6xl font-bold">
             <h1>
               Welcome to
               <br className="md:hidden" />
               <span className="text-transparent px-2 bg-gradient-to-r from-[#D247BF] to-primary bg-clip-text">
-                AEROLABS
+                AeroLabs
               </span>
             </h1>
           </div>
@@ -48,7 +48,7 @@ export const HeroSection = () => {
                 href="https://github.com/nobruf/shadcn-landing-page.git"
                 target="_blank"
               >
-                Github respository
+                Some other CTA
               </Link>
             </Button>
           </div>
@@ -62,8 +62,8 @@ export const HeroSection = () => {
             className="w-full md:w-[1200px] mx-auto rounded-lg relative rouded-lg leading-none flex items-center border border-t-2 border-secondary  border-t-primary/30"
             src={
               theme === "light"
-                ? "/hero-image-light.jpeg"
-                : "/hero-image-dark.jpeg"
+                ? "https://placehold.co/1250x860"
+                : "https://placehold.co/1250x860"
             }
             alt="dashboard"
           />
