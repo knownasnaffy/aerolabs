@@ -77,7 +77,7 @@ export const CoursesSection = () => {
           ({ title, description, kitIncluded, price, duration }) => (
             <Card
               key={title}
-              className="bg-muted/60 dark:bg-card h-full relative group hover:bg-muted/90 dark:hover:bg-card/50 flex flex-col justify-between hover:cursor-pointer"
+              className="bg-muted/60 dark:bg-card h-full relative group hover:bg-muted/90 dark:hover:bg-card/50 dark:border-muted flex flex-col justify-between hover:cursor-pointer"
             >
               <CardHeader>
                 <div className="flex items-center justify-between">
