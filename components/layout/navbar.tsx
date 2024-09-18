@@ -74,8 +74,8 @@ const featureList: FeatureProps[] = [
 export const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
   return (
-    <header className="shadow-inner bg-opacity-15 w-[90%] md:w-[70%] lg:w-[75%] lg:max-w-screen-xl top-5 mx-auto sticky border border-secondary z-40 rounded-2xl flex justify-between items-center p-2 bg-card">
-      <Link href="/" className="font-bold text-lg flex items-center">
+    <header className="shadow w-[90%] md:w-[70%] lg:w-[75%] lg:max-w-screen-xl top-5 mx-auto sticky border border-secondary z-40 rounded-2xl flex justify-between items-center p-2 bg-card/15  backdrop-blur">
+      <Link href="/" className="font-bold text-lg flex items-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 rounded-sm">
         <PlaneTakeoff className="bg-gradient-to-tr border-secondary from-primary via-primary/70 to-primary rounded-lg size-8 p-1 mr-2 border text-white" />
         AeroLabs
       </Link>
@@ -131,7 +131,7 @@ export const Navbar = () => {
       <NavigationMenu className="hidden lg:block mx-auto">
         <NavigationMenuList>
           <NavigationMenuItem>
-            <NavigationMenuTrigger className="bg-card text-base">
+            <NavigationMenuTrigger className="bg-transparent hover:bg-muted/20 focus:bg-muted/50 text-base">
               Features
             </NavigationMenuTrigger>
             <NavigationMenuContent>
@@ -171,7 +171,7 @@ export const Navbar = () => {
                 <NavigationMenuLink
                   className={cn(
                     navigationMenuTriggerStyle(),
-                    "bg-transparent text-base"
+                    "bg-transparent hover:bg-muted/50 focus:bg-muted/50 text-base"
                   )}
                 >
                   {label}
