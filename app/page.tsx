@@ -1,4 +1,5 @@
 import EssenceSection from "@/components/landing/essence";
+import { FAQSection } from "@/components/landing/faq";
 import { HeroSection } from "@/components/landing/hero";
 import { SponsorsSection } from "@/components/landing/sponsors";
 import { TeamSection } from "@/components/landing/team";
@@ -11,6 +12,7 @@ export default function Home() {
       <SponsorsSection />
       <EssenceSection />
       <TeamSection />
+      <FAQSection />
       <FooterSection />
     </>
   );
