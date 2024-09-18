@@ -1,5 +1,5 @@
 import { Separator } from "@/components/ui/separator";
-import { ChevronsDownIcon, PlaneTakeoff } from "lucide-react";
+import { PlaneTakeoff } from "lucide-react";
 import Link from "next/link";
 import { Card } from "../ui/card";
 
