@@ -124,7 +124,7 @@ export const TeamSection = () => {
           ({ imageUrl, name, position, socialNetworks }: TeamProps) => (
             <Card
               key={name}
-              className="bg-card border-muted relative mt-8 flex flex-col justify-center items-center"
+              className="bg-muted/60 dark:bg-card dark:border-muted relative mt-8 flex flex-col justify-center items-center"
             >
               <CardHeader className="mt-8 flex justify-center items-center pb-2">
                 <Image

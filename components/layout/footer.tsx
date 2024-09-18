@@ -1,11 +1,12 @@
 import { Separator } from "@/components/ui/separator";
 import { ChevronsDownIcon } from "lucide-react";
 import Link from "next/link";
+import { Card } from "../ui/card";
 
 export const FooterSection = () => {
   return (
     <footer id="footer" className="container py-24 sm:py-32">
-      <div className="p-10 bg-card border border-secondary rounded-2xl">
+      <Card className="p-10 bg-muted/60 dark:bg-card shadow-sm rounded-2xl">
         <div className="grid grid-cols-2 md:grid-cols-4 xl:grid-cols-6 gap-x-12 gap-y-8">
           <div className="col-span-full md:col-span-2 xl:col-span-4 flex flex-col justify-center gap-2">
             <Link href="/" className="flex font-bold items-center">
@@ -68,7 +69,7 @@ export const FooterSection = () => {
               </Link>
             </div>
           </div>
-          <Separator orientation="horizontal" className="col-span-2" />
+          <Separator orientation="horizontal" className="col-span-2 md:hidden" />
           <div className="md:hidden col-span-2">
               <h3 className="">
                 &copy; 2024 Designed and developed by
@@ -82,7 +83,7 @@ export const FooterSection = () => {
               </h3>
             </div>
         </div>
-      </div>
+      </Card>
     </footer>
   );
 };

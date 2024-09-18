@@ -1,3 +1,4 @@
+import { ContactSection } from "@/components/landing/contact";
 import EssenceSection from "@/components/landing/essence";
 import { FAQSection } from "@/components/landing/faq";
 import { HeroSection } from "@/components/landing/hero";
@@ -12,6 +13,7 @@ export default function Home() {
       <SponsorsSection />
       <EssenceSection />
       <TeamSection />
+      <ContactSection />
       <FAQSection />
       <FooterSection />
     </>
