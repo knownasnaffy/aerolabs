@@ -1,4 +1,4 @@
-import TeamSpirit from "@/components/assets/team-spirit.svg";
+import EssenceIllustration from "@/components/assets/essence.svg";
 import Image from "next/image";
 
 const EssenceSection = () => {
@@ -24,7 +24,7 @@ const EssenceSection = () => {
             </p>
           </div>
 
-          <Image src={TeamSpirit} alt="Yo buddy" className="fill-primary" />
+          <Image src={EssenceIllustration} alt="Yo buddy" className="fill-primary" />
         </div>
       </section>
     </>
