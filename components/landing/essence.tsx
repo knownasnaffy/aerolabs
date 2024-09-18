@@ -16,8 +16,8 @@ const EssenceSection = () => {
             </h2>
             <p className="text-xl text-muted-foreground mb-8">
               We are committed to providing a high-quality educational
-              experience that meets the promises we've made. If our course does
-              not deliver the outcomes we've outlined, we will offer a 100%
+              experience that meets the promises we&apos;ve made. If our course does
+              not deliver the outcomes we&apos;ve outlined, we will offer a 100%
               refund.<span className="align-super mr-1 text-sm">(1)</span>
               We strive to create an engaging and supportive learning
               environment for every student.

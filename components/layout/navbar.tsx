@@ -1,5 +1,5 @@
 "use client";
-import { PlaneTakeoff, Github, Menu } from "lucide-react";
+import { PlaneTakeoff, Menu } from "lucide-react";
 import React from "react";
 import {
   Sheet,
