@@ -1,5 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: "export",
+  basePath: '/aerolabs',
   images: {
     remotePatterns: [
       {
@@ -8,8 +10,6 @@ const nextConfig = {
         port: "",
         pathname: "/u/**",
       },
-    ],
-    remotePatterns: [
       {
         protocol: "https",
         hostname: "placehold.co",
@@ -18,6 +18,7 @@ const nextConfig = {
       },
     ],
     dangerouslyAllowSVG: true,
+    unoptimized: true,
   },
 };
 
