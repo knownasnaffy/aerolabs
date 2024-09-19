@@ -5,6 +5,7 @@ import { ArrowRight } from "lucide-react";
 import { useTheme } from "next-themes";
 import Image from "next/image";
 import Link from "next/link";
+import HeroImage from "@/components/assets/hero-image.jpg";
 
 export const HeroSection = () => {
   const { theme } = useTheme();
@@ -61,9 +62,10 @@ export const HeroSection = () => {
             height={1200}
             className="w-full md:w-[1200px] mx-auto rounded-lg relative rouded-lg leading-none flex items-center border border-t-2 border-secondary  border-t-primary/30"
             src={
-              theme === "light"
-                ? "https://placehold.co/1250x860"
-                : "https://placehold.co/1250x860"
+              // theme === "light"
+              //   ? "https://placehold.co/1250x860"
+              //   : "https://placehold.co/1250x860"
+              HeroImage
             }
             alt="dashboard"
           />
