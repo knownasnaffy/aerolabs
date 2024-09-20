@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { ThemeProvider } from "@/components/layout/theme-provider";
-import { Navbar } from "@/components/layout/navbar";
 import { cn } from "@/lib/utils";
+import Navbar from "@/components/layout/navbar";
 
 export const metadata: Metadata = {
   title: "AeroLabs",
@@ -21,16 +20,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={cn("min-h-screen bg-background text-foreground", inter.className)}>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-          <Navbar />
-          {children}
-        </ThemeProvider>
+      <body
+        className={cn(
+          "min-h-screen",
+          inter.className
+        )}
+      >
+        <Navbar />
+        {children}
       </body>
     </html>
   );
