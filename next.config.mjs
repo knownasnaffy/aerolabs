@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "export",
-  basePath: '/aerolabs',
+  // output: "export",
+  // basePath: '/aerolabs',
   images: {
     remotePatterns: [
       {
@@ -18,7 +18,7 @@ const nextConfig = {
       },
     ],
     dangerouslyAllowSVG: true,
-    unoptimized: true,
+    // unoptimized: true,
   },
 };
 
