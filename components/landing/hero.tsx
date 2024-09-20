@@ -2,7 +2,7 @@ import Image from "next/image";
 import HeroImage from "@/components/assets/hi-robot.jpg";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
-import { ArrowRight, ChevronRight, ShoppingCart } from "lucide-react";
+import { ArrowRight, ShoppingCart } from "lucide-react";
 
 const HeroSection = () => {
   return (
