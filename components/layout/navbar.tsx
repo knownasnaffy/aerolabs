@@ -19,7 +19,7 @@ const Navbar = () => {
         <div
           className={cn(
             "navbar transition-all duration-300",
-            shadow && "rounded-2xl shadow-md bg-base-100/50 backdrop-blur"
+            shadow && "rounded-2xl shadow-md bg-base-100"
           )}
         >
           <div className="flex-1">
