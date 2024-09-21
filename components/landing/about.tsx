@@ -7,14 +7,18 @@ const AboutSection = () => {
       <div className="container mx-auto min-h-screen grid place-items-center py-16 gap-8 lg:grid-cols-2 place-content-center px-6">
         <div className="space-y-4">
           <h1 className="text-4xl lg:text-6xl font-bold text-neutral">
-            Let's Build the Future
+            Let&#39;s Build the Future
             <span className="text-blue-500">—Together!</span>
           </h1>
           <p className="prose text-xl">
-            At AeroLabs, we turn learning into play! Dive into hands-on robotics and drone courses, guided by experts, with custom kits that make your ideas fly<span className="text-blue-500">—literally</span>. Join a community of creators, and let&#39;s build the future together!
+            At AeroLabs, we turn learning into play! Dive into hands-on robotics
+            and drone courses, guided by experts, with custom kits that make
+            your ideas fly<span className="text-blue-500">—literally</span>.
+            Join a community of creators, and let&#39;s build the future
+            together!
           </p>
         </div>
-        <div className="grid grid-cols-2 w-full pl-4 gap-4">
+        <div className="grid lg:grid-cols-2 w-full lg:pl-4 gap-4">
           <FeatureItem
             title={
               <>
@@ -68,7 +72,7 @@ const AboutSection = () => {
 export default AboutSection;
 
 const FeatureItem = ({ title, body }: { title: ReactNode; body: string }) => (
-  <div className="bg-base-100 border border-base-300 p-4 rounded-lg w-full [box-shadow:0_5px_0_0_#44536641] hover:-translate-y-1 transition-transform">
+  <div className="bg-base-100 border border-base-300 p-4 rounded-lg w-full [box-shadow:0_5px_0_0_#44536641] hover:-translate-y-1 transition-all hover:drop-shadow">
     <h3 className="text-xl font-semibold flex flex-col gap-1">{title}</h3>
     <p className="prose">{body}</p>
   </div>
