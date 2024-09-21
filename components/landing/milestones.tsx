@@ -1,4 +1,4 @@
-import { ArrowUpLeft, ArrowUpRight } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
 
 const MilestonesSection = () => {
