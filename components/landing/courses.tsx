@@ -4,7 +4,7 @@ import Link from "next/link";
 const CoursesSection = () => {
   return (
     <>
-      <section>
+      <section className="bg-base-200">
         <div className="container mx-auto min-h-screen py-16 px-6 flex flex-col items-center lg:text-center justify-center">
           <h1 className="text-4xl lg:text-6xl font-bold text-neutral">
             <span className="text-blue-500">Featured </span>Robotics & Drone
