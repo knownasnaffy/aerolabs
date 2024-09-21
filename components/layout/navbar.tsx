@@ -5,6 +5,14 @@ import { cn } from "@/lib/utils";
 import { useMotionValueEvent, useScroll } from "framer-motion";
 import { useState } from "react";
 import { Menu } from "lucide-react";
+import {
+  Sheet,
+  SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "../ui/sheet";
 
 const Navbar = () => {
   const { scrollY } = useScroll();
@@ -27,9 +35,38 @@ const Navbar = () => {
               AeroLabs
             </Link>
           </div>
-          <button className="btn btn-ghost btn-square lg:hidden">
-            <Menu />
-          </button>
+          <Sheet>
+            <SheetTrigger asChild>
+              <button className="btn btn-ghost btn-square lg:hidden">
+                <Menu />
+              </button>
+            </SheetTrigger>
+            <SheetContent side="left">
+              <SheetHeader className="text-left">
+                <Link href={"/"} className="btn w-fit btn-ghost text-xl">
+                  AeroLabs
+                </Link>
+                <ul className="menu pt-0 -translate-y-2 w-56">
+                  <li>
+                    <a>Courses</a>
+                  </li>
+                  <li>
+                    <a>Store</a>
+                  </li>
+                  <li>
+                    <a>Blog</a>
+                  </li>
+                  <li>
+                    <a>Contact Us</a>
+                  </li>
+                  <li>
+                    <Link href={"/auth"} className="bg-blue-500 text-white hover:bg-blue-600 active:bg-blue-600 hover:text-white active:text-white">Sign In</Link>
+                  </li>
+                </ul>
+              </SheetHeader>
+            </SheetContent>
+          </Sheet>
+
           <div className="gap-2 hidden lg:flex">
             <Link href={"/courses"} className="btn btn-ghost">
               Courses

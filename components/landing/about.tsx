@@ -18,7 +18,7 @@ const AboutSection = () => {
             together!
           </p>
         </div>
-        <div className="grid lg:grid-cols-2 w-full gap-4">
+        <div className="grid lg:grid-cols-2 w-full gap-4 pb-4">
           <FeatureItem
             title={
               <>
