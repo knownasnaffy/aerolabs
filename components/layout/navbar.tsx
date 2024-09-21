@@ -10,7 +10,7 @@ const Navbar = () => {
   const { scrollY } = useScroll();
   const [shadow, setShadow] = useState(false);
   useMotionValueEvent(scrollY, "change", (latest) => {
-    if (latest > 100) setShadow(true);
+    if (latest > 10) setShadow(true);
     else setShadow(false);
   });
   return (
