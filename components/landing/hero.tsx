@@ -45,7 +45,8 @@ const HeroSection = () => {
       </div>
       <div className="relative">
         <Image src={HeroImage} alt="asd" />
-        <span className="absolute -bottom-2 right-0 rounded-md bg-base-200 px-2 py-1">
+        <span className="absolute -bottom-6 md:-bottom-2 lg:-bottom-4
+         right-2 rounded-md bg-base-200 px-2 py-1">
           Designed by{" "}
           <a href="http://www.freepik.com/" className="link text-blue-500">
             Freepik
