@@ -5,7 +5,7 @@ const AboutSection = () => {
   return (
     <section className="bg-base-200">
       <div className="container mx-auto min-h-screen grid place-items-center py-16 gap-8 lg:grid-cols-2 place-content-center px-6">
-        <div className="space-y-4">
+        <div className="space-y-4 lg:order-2 text-right">
           <h1 className="text-4xl lg:text-6xl font-bold text-neutral">
             Let&#39;s Build the Future
             <span className="text-blue-500">—Together!</span>
@@ -18,7 +18,7 @@ const AboutSection = () => {
             together!
           </p>
         </div>
-        <div className="grid lg:grid-cols-2 w-full lg:pl-4 gap-4">
+        <div className="grid lg:grid-cols-2 w-full gap-4">
           <FeatureItem
             title={
               <>
