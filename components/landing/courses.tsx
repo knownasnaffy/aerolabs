@@ -59,7 +59,7 @@ const CourseCard = ({
   price: number;
   duration: string;
 }) => (
-  <div className="bg-base-100 border border-base-300 p-4 rounded-lg w-full [box-shadow:0_5px_0_0_#44536641] hover:-translate-y-1 transition-all hover:drop-shadow text-left">
+  <div className="bg-base-100 border border-base-300 p-4 rounded-lg w-full [box-shadow:0_5px_0_0_#44536641] lg:hover:-translate-y-1 transition-all lg:hover:drop-shadow text-left">
     <h3 className="text-2xl font-semibold flex flex-col gap-1">{title}</h3>
     <p className="prose mb-2">
       {description}
@@ -74,7 +74,7 @@ const CourseCard = ({
     </p>
     <Link
       href={href}
-      className="flex justify-center w-full sm:px-6 h-12 bg-blue-500 rounded-lg cursor-pointer select-none active:translate-y-2 active:[box-shadow:0_0px_0_0_#1b6ff8,0_0px_0_0_#1b70f841] active:border-b-[0px] transition-all duration-150 [box-shadow:0_10px_0_0_#1b6ff8,0_15px_0_0_#1b70f841] border-b-[1px] border-blue-400 hover:translate-y-[2px] mb-4"
+      className="flex justify-center w-full sm:px-6 h-12 bg-blue-500 rounded-lg cursor-pointer select-none active:translate-y-2 active:[box-shadow:0_0px_0_0_#1b6ff8,0_0px_0_0_#1b70f841] active:border-b-[0px] transition-all duration-150 [box-shadow:0_10px_0_0_#1b6ff8,0_15px_0_0_#1b70f841] border-b-[1px] border-blue-400 lg:hover:translate-y-[2px] mb-4"
     >
       <span className="flex gap-2 justify-center items-center h-full text-white font-bold text-lg ">
         Enroll Now <ArrowRight />

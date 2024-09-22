@@ -72,7 +72,7 @@ const AboutSection = () => {
 export default AboutSection;
 
 const FeatureItem = ({ title, body }: { title: ReactNode; body: string }) => (
-  <div className="bg-base-100 border border-base-300 p-4 rounded-lg w-full [box-shadow:0_5px_0_0_#44536641] hover:-translate-y-1 transition-all hover:drop-shadow">
+  <div className="bg-base-100 border border-base-300 p-4 rounded-lg w-full [box-shadow:0_5px_0_0_#44536641] lg:hover:-translate-y-1 transition-all lg:hover:drop-shadow">
     <h3 className="text-xl font-semibold flex flex-col gap-1">{title}</h3>
     <p className="prose">{body}</p>
   </div>
