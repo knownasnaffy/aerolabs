@@ -1,4 +1,4 @@
-import { BriefcaseIcon, GraduationCap, Hand, PencilIcon, PowerIcon, RocketIcon, Users } from "lucide-react";
+import { BriefcaseIcon, PencilIcon, PowerIcon, RocketIcon } from "lucide-react";
 import { ReactNode } from "react";
 
 const WhyRoboticsSection = () => {
@@ -7,7 +7,7 @@ const WhyRoboticsSection = () => {
       <section>
         <div className="container mx-auto min-h-screen py-16 px-6 flex flex-col items-center lg:text-center justify-center">
           <h1 className="text-4xl lg:text-6xl font-bold text-neutral w-full">
-            <span className="text-blue-500">Why </span>Learn Robotics? It's the
+            <span className="text-blue-500">Why </span>Learn Robotics? It&#39;s the
             Future!
           </h1>
           <p className="prose text-xl pt-2">
