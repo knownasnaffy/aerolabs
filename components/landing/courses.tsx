@@ -63,14 +63,14 @@ const CourseCard = ({
     <h3 className="text-2xl font-semibold flex flex-col gap-1">{title}</h3>
     <p className="prose mb-2">
       {description}
-      <div className="flex justify-between">
+      <span className="flex justify-between">
         <span>
           <strong>Duration:</strong> {duration}
         </span>
         <span>
           <strong>Price:</strong> {price ? `₹${price}` : "Free"}
         </span>
-      </div>
+      </span>
     </p>
     <Link
       href={href}
