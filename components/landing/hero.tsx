@@ -25,7 +25,7 @@ const HeroSection = () => {
         <div className="flex flex-col sm:flex-row gap-6 sm:gap-2 mt-4 w-full items-center">
           <Link
             href={"/courses"}
-            className="button max-lg:w-full max-w-md sm:px-6 h-12 bg-blue-500 rounded-lg cursor-pointer select-none active:translate-y-2 active:[box-shadow:0_0px_0_0_#1b6ff8,0_0px_0_0_#1b70f841] active:border-b-[0px] transition-all duration-150 [box-shadow:0_10px_0_0_#1b6ff8,0_15px_0_0_#1b70f841] border-b-[1px] border-blue-400 lg:hover:translate-y-[2px]"
+            className="button max-lg:w-full max-w-md sm:px-6 h-12 bg-blue-500 rounded-lg cursor-pointer select-none active:translate-y-2 active:[box-shadow:0_0px_0_0_#1b6ff8,0_0px_0_0_#1b70f841] active:border-b-[0px] transition-all duration-150 [box-shadow:0_10px_0_0_#1b6ff8,0_15px_0_0_#1b70f841] border-b-[1px] border-blue-400 hover:translate-y-[2px]"
           >
             <span className="flex gap-2 justify-center items-center h-full text-white font-bold text-lg ">
               Explore Courses
@@ -34,7 +34,7 @@ const HeroSection = () => {
           </Link>
           <Link
             href={"/courses"}
-            className="button max-lg:w-full max-w-md sm:px-6 h-12 bg-neutral rounded-lg cursor-pointer select-none active:translate-y-2 active:[box-shadow:0_0px_0_0_#445366,0_0px_0_0_#44536641] active:border-b-[0px] transition-all duration-150 [box-shadow:0_10px_0_0_#445366,0_15px_0_0_#44536641] border-b-[1px] border-neutral lg:hover:translate-y-[2px]"
+            className="button max-lg:w-full max-w-md sm:px-6 h-12 bg-neutral rounded-lg cursor-pointer select-none active:translate-y-2 active:[box-shadow:0_0px_0_0_#445366,0_0px_0_0_#44536641] active:border-b-[0px] transition-all duration-150 [box-shadow:0_10px_0_0_#445366,0_15px_0_0_#44536641] border-b-[1px] border-neutral hover:translate-y-[2px]"
           >
             <span className="flex gap-2 justify-center items-center h-full text-neutral-content font-bold text-lg ">
               Shop Components
